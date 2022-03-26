@@ -1,10 +1,96 @@
-<div class="profile main__profile">
-    <div class="profile__container">
-        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialNetwork</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="wraper">
+        @@include('header.html')
+        <main class="main">
+            <div class="profile main-profile">
+                <div class="profile__container">
+                    <div class="profile__top">
+                        <div class="profile__languages">
+                            <div class="profile__languages_top">
+                                <div class="profile__language">
+                                    English
+                                </div>
+                                <div class="profile__language">
+                                    English
+                                </div>
+                                <div class="profile__language">
+                                    English
+                                </div>
+                                <div class="profile__language">
+                                    English
+                                </div>
+                            </div>
+                            <div class="profile__languages_bottom">
+                                <a href="#" class="profile__languages-link">Подробнее...</a>
+                            </div>
+                        </div>
+                        <div class="profile__btn">
+                            <a href="#" class="profile__btn-link">
+                                <i class="fa-regular fa-circle-user"></i>
+                                <div class="profile__btn-text">Обо мне</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="profile__bottom">
+                        <div class="profile__user">
+                            <div class="profile__ava">
+                                <img src="img/avaDefault.png" alt="ava" class="profile__ava-img">
+                            </div>
+                            <div class="profile__user-info">
+                                <div class="profile__name">
+
+                                </div>
+                                <div class="profile__status">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile__buttons">
+                            <div class="profile__btn">
+                                <a href="#" class="profile__btn-link">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    <div class="profile__btn-text">добавить в друзья</div>
+                                </a>
+                            </div>
+                            <div class="profile__btn">
+                                <a href="#" class="profile__btn-link">
+                                    <i class="fa-solid fa-camera-rotate"></i>
+                                    <div class="profile__btn-text">загрузить фото</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content __container">
+                @@include('aside_left.html')
+                @@include('content.html')
+                @@include('aside_right.html')
+            </div>
+            <div class="btn-up main__btn-up">
+                <div class="btn-up__container">
+                    <div class="btn-up__arrows">
+                        <i class="fa-solid fa-angle-up"></i>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        @@include('footer.html')
     </div>
-</div>
-<div class="main-content __container">
-    @@include('aside_left.html')
-    @@include('content.html')
-    @@include('aside_right.html')
-</div>
+
+    <script src="https://kit.fontawesome.com/3e4aba961b.js" crossorigin="anonymous"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

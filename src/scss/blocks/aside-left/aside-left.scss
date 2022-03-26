@@ -1,7 +1,10 @@
 .aside-left {
     grid-area: lef;
-    position: fixed;
+    .__container-aside_left {
+        position: fixed;
+    }
 }
+
 
 .user-mini {
     margin-bottom: 24px;

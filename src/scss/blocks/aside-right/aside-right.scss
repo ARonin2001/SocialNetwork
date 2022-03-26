@@ -1,4 +1,7 @@
 .aside-right {
     grid-area: rigt;
+}
+.aside-user__friends {
     position: fixed;
+    max-width: 265px;
 }

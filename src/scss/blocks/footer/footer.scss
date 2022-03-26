@@ -1,0 +1,24 @@
+.footer {
+    grid-area: footer;
+    background-color: $footer-color;
+    align-self: end;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        padding: 22px 0;
+    }
+    &__ul {
+        display: flex;
+    }
+    &__li {
+        &:not(:last-child) {
+            margin-right: 28px;
+        }
+    }
+    &__link {
+        font-weight: 400;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+}

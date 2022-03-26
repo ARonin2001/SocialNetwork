@@ -1,0 +1,11 @@
+.main-content {
+    display: grid;
+    grid-template-columns: 265px 552px 265px;
+    grid-template-areas: 
+    "lef cont rigt";
+    column-gap: 24px;
+}
+
+.content {
+    grid-area: cont;
+}

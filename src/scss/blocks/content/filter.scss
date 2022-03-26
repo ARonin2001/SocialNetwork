@@ -1,0 +1,38 @@
+.filter {
+    overflow: hidden;
+    margin-bottom: 25px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        min-height: 48px;
+    }
+    &__item {
+        display: flex;
+        justify-items: center;
+        flex: 0 0 33.333%;
+        &:not(:last-child) {
+            border-right: 1px solid #E0E0E0;
+        }
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        
+        i {
+            font-size: 21px;
+            margin-right: 12px;
+        }
+        &-text {
+            font-weight: 500;
+            font-size: 12px;
+        }
+        &:hover, &_active {
+            background: rgba(179, 123, 164, 1);
+            color: #fff;
+        }
+    }
+}

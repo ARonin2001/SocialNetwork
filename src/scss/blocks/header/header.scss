@@ -1,0 +1,127 @@
+.header {
+    grid-area: head;
+    background-color: $light-yellow;
+    align-self: start;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
+    &__container {
+        margin: 0 auto;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // search
+    &__search {
+        max-width: 545px;
+        width: 100%;
+
+        &-input-container {
+            position: relative;
+        }
+        &-icon {
+            position: absolute;
+            top: 10px;
+            left: 13px;
+            font-size: 16px;
+            color: #6B6C6E;
+        }
+    }
+    
+    &__input-search {
+        width: 100%;
+        padding: 10px 36px;
+        background: #FFFFFF;
+        border-radius: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #B9BABD;
+    }
+
+    // user menu
+    &__user {
+        &-menu {
+            max-width: 189px;
+            width: 100%;
+            max-height: 45px;
+        }
+        &-ul_left img {
+            width: 45px;
+            margin-right: 8px;
+        }
+        &-ul_left {
+            display: flex;
+            align-items: center;
+        }
+        &-ul-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 13px 0 0;
+
+        }
+        &-ul-arrow_icon {
+            font-size: 22px;
+        }
+    }
+    
+    &__ul {
+        .header__user-ul-container {
+            background: #FFFFFF;
+            border-radius: 50px;
+            transition: all .05s;
+        }
+        &_active {
+            .header__user-ul-container {
+                border-radius: 22px 10px 0px 0px;
+            }
+            .header__user-ul-arrow_icon {
+                transform: rotate(180deg);
+            }
+        }
+
+        &-link {
+            cursor: pointer;
+        }
+
+        .header__user-ul-arrow_icon {
+            transition: transform .3s;
+        }
+            
+    }
+    &__sub-ul {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.05s ease-out;
+        
+        &-li {
+            background: #FFFFFF;
+            font-weight: 400;
+
+            &:last-child, &:last-child a:hover {
+                border-radius: 0px 0px 10px 10px;
+            }
+        }
+        &-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 16px 10px 23px;
+            &:hover {
+                background: rgba(138, 90, 90, 0.4);
+            }
+
+            &-name {
+                font-size: 16px;
+                line-height: 19px;
+                color: #000000;
+                font-weight: 400;
+            }
+            i {
+                color: #000000;
+            }
+        }
+       
+    }
+}

@@ -1,0 +1,12 @@
+.wraper {
+    min-height: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 65px auto 60px;
+    grid-template-columns: auto 1132px auto;
+    grid-template-areas: 
+    "head head head"
+    "main main main"
+    "footer footer footer";
+    row-gap: 35px;
+}

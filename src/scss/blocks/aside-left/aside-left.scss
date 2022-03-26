@@ -1,0 +1,43 @@
+.aside-left {
+    grid-area: lef;
+    position: fixed;
+}
+
+.user-mini {
+    margin-bottom: 24px;
+
+    &__back {
+        width: 100%;
+        height: 92px;
+        background: url('../img/avaBackground.jpg') center/cover no-repeat;
+        border-radius: 10px 10px 0 0;
+    }
+
+    &__bottom {
+        padding: 0 13px 13px 13px;
+    }
+    &__ava {
+        display: flex;
+        align-items: flex-start;
+    }
+    &__ava-img {
+        margin: -22px 13px 0 0;
+        img {
+            border: 4px solid #FFFFFF;
+            border-radius: 50%;
+            width: 60px;
+        }
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 18px;
+        color: #000000;
+        margin-top: 7px;
+    }
+    &__status {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+    }
+}

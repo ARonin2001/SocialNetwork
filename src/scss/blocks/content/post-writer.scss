@@ -1,0 +1,55 @@
+.post-write {
+    margin-bottom: 24px;
+    &__container {
+        padding: 13px;
+    }
+    &__title {
+        user-select: all;
+        &_unactive {
+            display: none;
+        }
+    }
+    .form-post {
+        &__content {
+            width: 100%;
+            min-height: 73px;
+            height: auto;
+            font-weight: 400;
+            font-size: 14px;
+            color: #B2B4BC;
+
+            &-container {
+                height: 100%;
+            }
+        }
+        &__placeholder {
+            &_unactive {
+                display: none;
+            }
+        }
+        &_bottom {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__img {
+            &-container {
+                position: relative;
+            }
+            &-input {
+                display: none;
+            }
+            &-label {
+                display: block;
+                width: 25px;
+                height: 25px;
+                background: url('../img/3643766-album-image-landscape-photo-photos-picture_113407.svg') center/cover no-repeat;
+                cursor: pointer;
+                transition: transform .2s;
+                &:active {
+                    transform: scale(0.9, 0.9);
+                }
+            }
+        }
+    }
+}

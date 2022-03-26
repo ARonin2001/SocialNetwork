@@ -1,0 +1,73 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("fonts/#{$file_name}.woff") forma("woff"), url("fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+}
+
+// base
+@import 'reset';
+@import 'fonts';
+@import 'base/animations';
+@import 'base/media';
+@import 'base/mixins';
+@import 'base/variables';
+
+body {
+    background-color: #E5E5E5;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Roboto';
+}
+.line {
+    border: 1px solid #E0E0E0;
+    width: 100%;
+    margin: 7px 0;
+}
+.title {
+    font-weight: 700;
+    font-size: 18px;
+}
+.sub-title {
+    font-weight: 700;
+    font-size: 13px;
+    color: #B2B4BC;
+}
+.btn {
+    background: #1FC375;
+    border-radius: 6px;
+    color: #fff;
+    padding: 5px 20px;
+    transition: all .2s;
+    &:hover {
+        background: #FF676B;
+    }
+    &:active {
+        transform: scale(0.9, 0.9);
+    }
+}
+
+@import 'wraper';
+
+// blocks
+@import 'blocks/block';
+@import 'blocks/containers/container';
+@import 'blocks/header/header';
+@import 'blocks/main/main';
+// main-content
+// left aside
+@import 'blocks/aside-left/aside-left';
+@import 'blocks/aside-left/menu';
+// right aside
+@import 'blocks/aside-right/aside-right';
+@import 'blocks/aside-right/friends';
+
+@import 'blocks/content/content';
+@import 'blocks/content/post-writer';
+@import 'blocks/content/filter';
+@import 'blocks/content/posts';
+@import 'btn-up';
+
+// footer
+@import 'blocks/footer/footer';

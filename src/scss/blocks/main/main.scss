@@ -4,4 +4,12 @@
     display: grid;
     justify-content: center;
     position: relative;
+
+    &-content {
+        margin: 0 auto;
+    }
+
+    &__profile {
+        margin: -35px 0 24px 0;
+    }
 }

@@ -12,7 +12,7 @@
     <div class="wraper">
         @@include('header.html')
         <main class="main">
-            <div class="profile main-profile">
+            <div class="profile main__profile">
                 <div class="profile__container">
                     <div class="profile__top">
                         <div class="profile__languages">
@@ -45,21 +45,30 @@
                         <div class="profile__user">
                             <div class="profile__ava">
                                 <img src="img/avaDefault.png" alt="ava" class="profile__ava-img">
+                                <div class="profile__ava_change">
+                                    <i class="fa-solid fa-camera-rotate"></i>
+                                </div>
                             </div>
                             <div class="profile__user-info">
                                 <div class="profile__name">
-
+                                    Mister Bin
                                 </div>
                                 <div class="profile__status">
-
+                                    It’s my very beautifule status. Eee man. I’m a React developer. I’m a best of the best React developer yes.
                                 </div>
                             </div>
                         </div>
                         <div class="profile__buttons">
-                            <div class="profile__btn">
+                            <div class="profile__btn profile__btn_add-friend">
                                 <a href="#" class="profile__btn-link">
                                     <i class="fa-solid fa-user-plus"></i>
                                     <div class="profile__btn-text">добавить в друзья</div>
+                                </a>
+                            </div>
+                            <div class="profile__btn profile__btn_delete-friend">
+                                <a href="#" class="profile__btn-link">
+                                    <i class="fa-solid fa-user-minus"></i>
+                                    <div class="profile__btn-text">удалить из друзья</div>
                                 </a>
                             </div>
                             <div class="profile__btn">
@@ -70,6 +79,10 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="profile__back">
+                    <img src="img/avaBackground.jpg" alt="japan background" class="profile__back-img">
                 </div>
             </div>
             <div class="main-content __container">

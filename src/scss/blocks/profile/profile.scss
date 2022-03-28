@@ -1,3 +1,134 @@
 .profile {
-    
+    position: relative;
+    width: 100vw;
+    height: 418px;
+
+    &__back {
+        img {
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -100;
+            height: 100%;
+        }
+    }
+
+    &__container {
+        height: 100%;
+        padding: 27px 41px 26px 51px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    // bottom
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__ava {
+        position: relative;
+        border-radius: 100px;
+        overflow: hidden;
+        margin-right: 14px;
+        cursor: pointer;
+        img {
+            width: 95px;
+            border: 4px solid #FF676B;
+            border-radius: 100px;
+        }
+        &:hover {
+            .profile__ava_change {
+                bottom: 0;
+            }
+        }
+        
+        &_change {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.5);
+            left: 0;
+            bottom: -95px;
+            width: 100%;
+            height: 100%;
+            transition: all .3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            i {
+                font-size: 32px;
+                color: #fff;
+            }
+        }
+    }
+    &__user {
+        display: flex;
+        align-items: center;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 36px;
+        color: #FFFFFF;
+        margin-bottom: 6px;
+    }
+    &__status {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        color: #FFFFFF;
+        max-width: 480px;
+        max-height: 55px;
+    }
+
+    // bottom buttons
+    &__buttons {
+        display: flex;
+        align-items: flex-end;
+    }
+    &__btn {
+        background: #E3E6E9;
+        border-radius: 50px;
+        transition: all .3s;
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+        &:hover {
+            background: #54595E;
+            .profile__btn-link {
+                color: #fff;
+            }
+        }
+        
+        &-link {
+            display: flex;
+            align-items: center;
+            padding: 6px 18px;
+            font-weight: 500;
+            font-size: 16px;
+            color: #2A2E33;
+            
+            i {
+                font-size: 20px;
+            }
+        }
+        &-text {
+            margin-left: 8px;
+        }
+
+        &_add-friend {
+            display: none;
+            &:hover {
+                background: #1FC375;
+            }
+        }
+        &_delete-friend {
+            display: none;
+            &:hover {
+                background: #FF676B;
+            }
+        }
+    }
 }

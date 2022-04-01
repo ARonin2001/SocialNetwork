@@ -1,7 +1,17 @@
 .profile {
-    position: relative;
     width: 100vw;
     height: 418px;
+    transition: all .5s;
+    position: relative;
+    &:hover {
+        background: rgba(0, 0, 0, 0.45);
+        .profile__top {
+            top: 0;
+        }
+        .profile__bottom {
+            bottom: 0;
+        }
+    }
 
     &__back {
         img {
@@ -21,12 +31,64 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        overflow: hidden;
+        position: relative;
+    }
+
+    // top
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        top: -240px;
+        transition: all .5s;
+    }
+    &__languages {
+        margin: 0 auto;
+        max-width: 398px;
+        max-height: 216px;
+        width: 100%;
+
+        &-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            &:not(:last-child) {
+                margin: 0 0 12px 0;
+            }
+        }
+        &_bottom {
+            margin-top: 22px;
+            text-align: center;
+        }
+        &-link {
+            font-weight: 400;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+    }
+    &__language {
+        background: #FF676B;
+        border-radius: 50px;
+        color: #fff;
+        padding: 4px 13px;
+        font-weight: 400;
+        font-size: 20px;
+        flex: 1 1 auto;
+        text-align: center;
+        &:not(:last-child) {
+            margin: 0 5px 0 0;
+        }
     }
 
     // bottom
     &__bottom {
         display: flex;
         justify-content: space-between;
+        position: relative;
+        bottom: -120px;
+        transition: all .3s;
     }
     &__ava {
         position: relative;

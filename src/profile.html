@@ -88,15 +88,20 @@
 
                     <div class="profile__user-lng block">
                         <div class="profile__user-lng-container">
-                            <h2 class="profile__user-lng-title title">
-                                Языки
-                            </h2>
+                            <div class="profile__user-lng-header">
+                                <h2 class="profile__user-lng-title title">
+                                    Языки
+                                </h2>
+                                <div class="profile__user-lng_close">
+                                </div>
+                            </div>
+                            
                             <div class="line"></div>
                             <div class="profile__user-lng-items">
                                 <div class="profile__user-lng-item">
                                     <div class="profile__user-lng-sub-title">
                                         Родные
-                                        <div class="profile__user-lng_add"></div>
+                                        <i class="fa-regular fa-square-plus"></i>
                                     </div>
                                     <div class="profile__user-lng-language-items">
                                         <div class="profile__user-lng-language language">
@@ -113,7 +118,7 @@
                                 <div class="profile__user-lng-item">
                                     <div class="profile__user-lng-sub-title">
                                         Так же знаю
-                                        <div class="profile__user-lng_add"></div>
+                                        <i class="fa-regular fa-square-plus"></i>
                                     </div>
                                     <div class="profile__user-lng-language-items">
                                         <div class="profile__user-lng-language language">
@@ -130,22 +135,45 @@
                                 <div class="profile__user-lng-item">
                                     <div class="profile__user-lng-sub-title">
                                         Изучаю
-                                        <div class="profile__user-lng_add"></div>
+                                        <i class="fa-regular fa-square-plus"></i>
                                     </div>
                                     <div class="profile__user-lng-language-items">
-                                        <div class="profile__user-lng-language language">
-                                            Русский
+                                        <div class="profile__user-lng-language language__container">
+                                            <div class="language language__study">
+                                                Русский
+                                            </div>
+                                            <div class="language language__levels">
+                                                <span class="language__level"></span>
+                                                <span class="language__level"></span>
+                                                <span class="language__level language__level_active"></span>
+                                            </div>
                                         </div>
-                                        <div class="profile__user-lng-language language">
-                                            Deutsch
+
+                                        <div class="profile__user-lng-language language__container">
+                                            <div class="language language__study">
+                                                Русский
+                                            </div>
+                                            <div class="language language__levels">
+                                                <span class="language__level"></span>
+                                                <span class="language__level"></span>
+                                                <span class="language__level language__level_active"></span>
+                                            </div>
                                         </div>
-                                        <div class="profile__user-lng-language language">
-                                            日本語
+
+                                        <div class="profile__user-lng-language language__container">
+                                            <div class="language language__study">
+                                                日本語
+                                            </div>
+                                            <div class="language language__levels">
+                                                <span class="language__level"></span>
+                                                <span class="language__level"></span>
+                                                <span class="language__level language__level_active"></span>
+                                            </div>
                                         </div>
+                                        
                                         
                                     </div>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -167,7 +195,6 @@
                         <i class="fa-solid fa-angle-up"></i>
                     </div>
                 </div>
-                
             </div>
         </main>
         @@include('footer.html')

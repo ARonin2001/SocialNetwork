@@ -96,3 +96,27 @@ const btnUp = document.querySelector('.btn-up'),
 btnUp.addEventListener('click', () => {
     header.scrollIntoView({block: "center", behavior: "smooth"});
 });
+
+// user-languages
+const profileLanguagesBottom = document.querySelector('.profile__languages_bottom'),
+    profileUserLng = document.querySelector('.profile__user-lng'),
+    profileUserLngClose = document.querySelector('.profile__user-lng_close');
+
+profileLanguagesBottom.addEventListener('click', e => {
+    profileUserLng.classList.add('active');    
+});
+profileUserLngClose.addEventListener('click', () => {
+    profileUserLng.classList.remove('active');    
+});
+
+
+
+// languages
+const languageContainer = document.querySelectorAll('.language__container');
+
+for(let i = 0; i < languageContainer.length; i++) {
+    languageContainer[i].addEventListener('click', e => {
+        languageContainer[i].classList.toggle('active');
+    });
+}
+

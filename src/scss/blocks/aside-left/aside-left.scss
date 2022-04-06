@@ -1,7 +1,9 @@
 .aside-left {
     grid-area: lef;
     .__container-aside_left {
-        position: fixed;
+        // position: fixed;
+        position: sticky;
+        top: 65px;
     }
 }
 

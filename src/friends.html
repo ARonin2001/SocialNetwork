@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialNetwork</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="wraper">
+        @@include('header.html')
+        <main class="main">
+            <div class="main-content __container">
+                @@include('aside_left.html')
+                <div class="content">
+                    <div class="content__container">
+                        <div class="content__friends friends block">
+                            <div class="friends__container p-13">
+                                <div class="friends__header">
+                                    <div class="friends__title">
+                                        <span class="friends__count"></span>
+                                    </div>
+                                    <div class="friends__title">
+                                        
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="friends__search">
+                                    <div class="friends__input-container">
+                                        <i class="fa fa-search header__search-icon"></i>
+                                        <input type="text" class="friends__searching" id="friends__searching">
+                                    </div>
+                                    <div class="friends__parameter">
+                                        <span class="friends__title-parameter"></span>
+
+                                        <div class="friends__parameters parameters block">
+                                            <div class="parameters__container">
+                                                <div class="parameters__item">
+                                                    <div class="parameters__title"></div>
+                                                    <input type="text" class="parameters__combobox">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @@include('aside_right.html')
+            </div>
+            <div class="btn-up main__btn-up">
+                <div class="btn-up__container">
+                    <div class="btn-up__arrows">
+                        <i class="fa-solid fa-angle-up"></i>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        @@include('footer.html')
+    </div>
+
+    <script src="https://kit.fontawesome.com/3e4aba961b.js" crossorigin="anonymous"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

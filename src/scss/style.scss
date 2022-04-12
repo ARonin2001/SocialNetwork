@@ -56,6 +56,9 @@ body {
     font-size: 20px;
     text-align: center;
 }
+.p-13 {
+    padding: 13px;
+}
 
 @import 'wraper';
 
@@ -73,12 +76,17 @@ body {
 @import 'blocks/aside-right/friends';
 
 @import 'blocks/content/content';
+@import 'blocks/content/user-lng';
 @import 'blocks/content/post-writer';
 @import 'blocks/content/filter';
 @import 'blocks/content/posts';
 
 // profile
 @import 'blocks/profile/profile';
+@import 'blocks/profile/about-me';
+
+// dialogs
+@import 'blocks/friends/friends';
 
 // login
 @import 'blocks/login/login';

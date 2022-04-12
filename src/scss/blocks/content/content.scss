@@ -8,4 +8,11 @@
 
 .content {
     grid-area: cont;
+
+    &__about-me {
+        margin-bottom: 24px;
+    }
+    &__user-lng {
+        margin-bottom: 24px;
+    }
 }

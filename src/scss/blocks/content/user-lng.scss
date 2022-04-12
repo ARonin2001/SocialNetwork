@@ -1,0 +1,111 @@
+.user-lng {
+    width: 100%;
+    &.active {
+        display: block;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+    }
+    &_close {
+        cursor: pointer;
+        &:before, &:after {
+            content: '';
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: $btn-loading-gray;
+        }
+        &:before {
+            transform: rotate(45deg);
+        }
+        &:after {
+            transform: translateY(-3px) rotate(-45deg);
+        }
+    }
+
+    &__container {
+        padding: 13px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+    }
+    &__sub-title {
+        font-weight: 300;
+        font-size: 20px;
+        margin-bottom: 9px;
+        display: flex;
+        align-items: flex-end;
+        &:hover {
+            i {
+                display: inline;
+            }
+        }
+        i {
+            display: none;
+            font-size: 17px;
+            color: #1FC375;
+            margin-left: 6px;
+            cursor: pointer;
+        }
+    }
+    &__language {
+        z-index: 10;
+        margin-bottom: 12px;
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+        &-items {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start
+        }
+    }
+    .language {
+        &__container {
+            position: relative;
+            transition: all .3s;
+            &.active {
+                margin: 0 33px 10px 0;
+                .language__levels {
+                    left: 26px;
+                }
+            }
+        }
+        &__study {
+            z-index: 20;
+        }
+        &__levels {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            width: 99%;
+            height: 99%;
+            background: #263337;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 6px 7px;
+            transition: all .3s;
+        }
+        &__level {
+            width: 15px;
+            height: 3px;
+            background: #DCE2DF;
+            &:not(:last-child) {
+                margin-bottom: 2px;
+            }
+            &_active {
+                background: #1FC375;
+            }
+        }
+    }
+}

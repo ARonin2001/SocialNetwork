@@ -20,31 +20,119 @@
                             <div class="friends__container p-13">
                                 <div class="friends__header">
                                     <div class="friends__title">
-                                        <span class="friends__count"></span>
+                                        My friends
+                                        <span class="friends__count">65</span>
                                     </div>
                                     <div class="friends__title">
-                                        
+                                        All
                                     </div>
                                 </div>
                                 <div class="line"></div>
                                 <div class="friends__search">
                                     <div class="friends__input-container">
                                         <i class="fa fa-search header__search-icon"></i>
-                                        <input type="text" class="friends__searching" id="friends__searching">
+                                        <input type="text" class="friends__searching" id="friends__searching" placeholder="User name...">
                                     </div>
                                     <div class="friends__parameter">
-                                        <span class="friends__title-parameter"></span>
+                                        <span class="friends__title-parameter">PARAMETERS</span>
 
                                         <div class="friends__parameters parameters block">
-                                            <div class="parameters__container">
-                                                <div class="parameters__item">
-                                                    <div class="parameters__title"></div>
-                                                    <input type="text" class="parameters__combobox">
-                                                </div>
+                                            <div class="parameters__container p-13">
+                                                <form class="parameters__form" id="parameters__form">
+                                                    <div class="parameters__item">
+                                                        <div class="parameters__title">Country</div>
+                                                        <div class="parameters__combo">
+                                                            <select name="country" class="parameters__combobox">
+                                                                <option class="parameters__combobox-item">Japan</option>
+                                                                <option class="parameters__combobox-item">Russia</option>
+                                                                <option class="parameters__combobox-item">USA</option>
+                                                            </select>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="parameters__item">
+                                                        <div class="parameters__title">City</div>
+                                                        <div class="parameters__combo">
+                                                            <select name="city" class="parameters__combobox">
+                                                                <option class="parameters__combobox-item">Nagoya</option>
+                                                                <option class="parameters__combobox-item">Astana</option>
+                                                                <option class="parameters__combobox-item">New-York</option>
+                                                            </select>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="parameters__item">
+                                                        <div class="parameters__title">Age</div>
+                                                        <div class="parameters__age">
+                                                            <div class="parameters__combo">
+                                                                <select name="age-from" class="parameters__combobox">
+                                                                    <option class="parameters__combobox-item" value="from" disabled>From</option>
+                                                                    <option class="parameters__combobox-item">28</option>
+                                                                    <option class="parameters__combobox-item">20</option>
+                                                                    <option class="parameters__combobox-item">22</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="parameters__combo">
+                                                                <select name="age-to" class="parameters__combobox">
+                                                                    <option class="parameters__combobox-item" value="to" disabled>To</option>
+                                                                    <option class="parameters__combobox-item">45</option>
+                                                                    <option class="parameters__combobox-item">50</option>
+                                                                    <option class="parameters__combobox-item">70</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="parameters__item">
+                                                        <div class="parameters__title">Gender</div>
+                                                        <div class="parameters__radiobtns">
+                                                            <div class="parameters__radiobtns-container">
+                                                                <input id="men" name="gender" type="radio" class="parameters__gender">
+                                                                <label for="men" class="parameters__label">Male</label>
+                                                            </div>
+                                                            <div class="parameters__radiobtns-container">
+                                                                <input id="woman" name="gender" type="radio" class="parameters__gender">
+                                                                <label for="woman" class="parameters__label">Woman</label>
+                                                            </div>
+                                                            <div class="parameters__radiobtns-container">
+                                                                <input id="any-gender" name="gender" type="radio" class="parameters__gender">
+                                                                <label for="any-gender" class="parameters__label">Any gender</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="parameters__item">
+                                                        <div class="parameters__title">Fluent language</div>
+                                                        <div class="parameters__combo">
+                                                            <select name="fluent-language" class="parameters__combobox">
+                                                                <option class="parameters__combobox-item">Russian</option>
+                                                                <option class="parameters__combobox-item">Japan</option>
+                                                                <option class="parameters__combobox-item">English</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="parameters__item">
+                                                        <div class="parameters__title">Language learner</div>
+                                                        <div class="parameters__combo">
+                                                            <select name="fluent-language" class="parameters__combobox">
+                                                                <option class="parameters__combobox-item">Russian</option>
+                                                                <option class="parameters__combobox-item">Japan</option>
+                                                                <option class="parameters__combobox-item">English</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="parameters__combo">
+                                                            <select name="fluent-language" class="parameters__combobox">
+                                                                <option class="parameters__combobox-item">Russian</option>
+                                                                <option class="parameters__combobox-item">Japan</option>
+                                                                <option class="parameters__combobox-item">English</option>
+                                                            </select>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="line"></div>
                             </div>
                         </div>
                     </div>

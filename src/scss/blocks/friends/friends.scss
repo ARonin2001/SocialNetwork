@@ -1,3 +1,19 @@
-.dialogs {
+.friends {
     max-height: 982px;
+    &__header {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    &__title {
+        cursor: pointer;
+        &:not(:last-child) {
+            margin-right: 21px;
+        }
+        .active {
+            border: 1px solid #FF676B;
+        }
+    }
 }

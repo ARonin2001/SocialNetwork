@@ -1,0 +1,88 @@
+.parameters {
+    max-width: 264px;
+    width: 100%;
+    display: none;
+    .active {
+        display: block;
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 7px;
+    }
+    &__item {
+        &:last-child {
+            margin-bottom: -7px;
+        }
+    }
+    &__combobox {
+        background: #FFFFFF;
+        border: 1px solid #757575;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 6px 0 6px 7px;
+        width: 100%;
+        margin-bottom: 7px;
+        
+    }
+    &__combobox, &__label {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        font-family: 'Roboto';
+    }
+    &__age {
+        display: flex;
+        align-items: center;
+        .parameters__combo:not(:last-child) {
+            margin-right: 20px;
+        }
+        .parameters__combobox {
+            width: 73px;
+        }
+    }
+
+    // radiobuttons gender
+    &__radiobtns-container { 
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 7px;
+    }
+    &__gender {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        &:checked+label::after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            background: #1FC375;
+            border-radius: 50%;
+        }
+    }
+    
+    &__label {
+        cursor: pointer;
+        margin-left: 19px;
+        &::before {
+            content: '';
+            display: block;
+            background: #FFFFFF;
+            border: 1px solid #1FC375;
+            border-radius: 50%;
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+    }
+}

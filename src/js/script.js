@@ -44,28 +44,6 @@ menuLiContainer.addEventListener('click', (e) => {
     accordionBlock(menuSubUl);
 });
 
-// post-writer
-const formPostContent = document.querySelector('.form-post__content'),
-    formPostPlaceholder = document.querySelector('.form-post__placeholder'),
-    title = document.querySelector('.post-write__title');
-
-formPostContent.addEventListener('focus', (e) => {
-    formPostPlaceholder.classList.add('form-post__placeholder_unactive');
-});
-formPostContent.addEventListener('blur', (e) => {
-    let lengthContent = formPostContent.innerHTML.length;
-    if(lengthContent === 99 || lengthContent == 153)
-        formPostPlaceholder.classList.remove('form-post__placeholder_unactive');
-});
-title.addEventListener('focus', (e) => {
-    if(title.innerHTML === "Your Title")
-        title.innerHTML = "";
-});
-title.addEventListener('blur', (e) => {
-    if(title.innerHTML == "")
-        title.innerHTML = "Your Title";
-});
-
 // filter
 const buttons = document.querySelectorAll('.filter__btn');
 
@@ -96,20 +74,6 @@ const btnUp = document.querySelector('.btn-up'),
 btnUp.addEventListener('click', () => {
     header.scrollIntoView({block: "center", behavior: "smooth"});
 });
-
-// user-languages
-const profileLanguagesBottom = document.querySelector('.profile__languages_bottom'),
-    profileUserLng = document.querySelector('.profile__user-lng'),
-    profileUserLngClose = document.querySelector('.profile__user-lng_close');
-
-profileLanguagesBottom.addEventListener('click', e => {
-    profileUserLng.classList.add('active');    
-});
-profileUserLngClose.addEventListener('click', () => {
-    profileUserLng.classList.remove('active');    
-});
-
-
 
 // languages
 const languageContainer = document.querySelectorAll('.language__container');

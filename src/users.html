@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialNetwork</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="wraper">
+        @@include('header.html')
+        <main class="main">
+            <div class="main-content __container">
+                @@include('aside_left.html')
+                <div class="content">
+                    <div class="content__container">
+                        <div class="content__users users block">
+                            <div class="users__container p-13">
+                                <div class="users__header">
+                                    <div class="users__header-title active">
+                                        My friends
+                                        <span class="users__count">65</span>
+                                    </div>
+                                    <div class="users__header-title">
+                                        All users
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="users__search">
+                                    <div class="users__input-container">
+                                        <i class="fa fa-search"></i>
+                                        <input type="text" class="users__searching" id="users__searching" placeholder="User name...">
+                                    </div>
+                                    <div class="users__parameter">
+                                        <span class="users__title-parameter">PARAMETERS</span>
+
+                                        <div class="users__parameters parameters block">
+                                            <div class="parameters__container p-13">
+                                                <form class="parameters__form" id="parameters__form">
+                                                    <div class="parameters__item">
+                                                        <div class="parameters__title">Country</div>
+                                                        <div class="parameters__combo">
+                                                            <select name="country" class="parameters__combobox">
+                                                                <option class="parameters__combobox-item">Japan</option>
+                                                                <option class="parameters__combobox-item">Russia</option>
+                                                                <option class="parameters__combobox-item">USA</option>
+                                                            </select>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="parameters__item">
+                                                        <div class="parameters__title">City</div>
+                                                        <div class="parameters__combo">
+                                                            <select name="city" class="parameters__combobox">
+                                                                <option class="parameters__combobox-item">Nagoya</option>
+                                                                <option class="parameters__combobox-item">Astana</option>
+                                                                <option class="parameters__combobox-item">New-York</option>
+                                                            </select>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="parameters__item">
+                                                        <div class="parameters__title">Age</div>
+                                                        <div class="parameters__age">
+                                                            <div class="parameters__combo">
+                                                                <select name="age-from" class="parameters__combobox">
+                                                                    <option class="parameters__combobox-item" value="from" disabled>From</option>
+                                                                    <option class="parameters__combobox-item">28</option>
+                                                                    <option class="parameters__combobox-item">20</option>
+                                                                    <option class="parameters__combobox-item">22</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="parameters__combo">
+                                                                <select name="age-to" class="parameters__combobox">
+                                                                    <option class="parameters__combobox-item" value="to" disabled>To</option>
+                                                                    <option class="parameters__combobox-item">45</option>
+                                                                    <option class="parameters__combobox-item">50</option>
+                                                                    <option class="parameters__combobox-item">70</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="parameters__item">
+                                                        <div class="parameters__title">Gender</div>
+                                                        <div class="parameters__radiobtns">
+                                                            <div class="parameters__radiobtns-container">
+                                                                <input id="men" name="gender" type="radio" class="parameters__gender">
+                                                                <label for="men" class="parameters__label">Male</label>
+                                                            </div>
+                                                            <div class="parameters__radiobtns-container">
+                                                                <input id="woman" name="gender" type="radio" class="parameters__gender">
+                                                                <label for="woman" class="parameters__label">Woman</label>
+                                                            </div>
+                                                            <div class="parameters__radiobtns-container">
+                                                                <input id="any-gender" name="gender" type="radio" class="parameters__gender">
+                                                                <label for="any-gender" class="parameters__label">Any gender</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="parameters__item">
+                                                        <div class="parameters__title">Fluent language</div>
+                                                        <div class="parameters__combo">
+                                                            <select name="fluent-language" class="parameters__combobox">
+                                                                <option class="parameters__combobox-item">Russian</option>
+                                                                <option class="parameters__combobox-item">Japan</option>
+                                                                <option class="parameters__combobox-item">English</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="parameters__item">
+                                                        <div class="parameters__title">Language learner</div>
+                                                        <div class="parameters__combo">
+                                                            <select name="fluent-language" class="parameters__combobox">
+                                                                <option class="parameters__combobox-item">Russian</option>
+                                                                <option class="parameters__combobox-item">Japan</option>
+                                                                <option class="parameters__combobox-item">English</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="parameters__combo">
+                                                            <select name="fluent-language" class="parameters__combobox">
+                                                                <option class="parameters__combobox-item">Russian</option>
+                                                                <option class="parameters__combobox-item">Japan</option>
+                                                                <option class="parameters__combobox-item">English</option>
+                                                            </select>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="users__items">
+                                    <div class="users__item user">
+                                        <div class="user__container">
+                                            <div class="user__item_left">
+                                                <a href="#" class="user__ava">
+                                                    <img src="img/avaDefault.png" alt="user" class="users__ava-img">
+                                                </a>
+                                            </div>
+                                            <div class="user__item_right">
+                                                <a href="#" class="user__name">
+                                                    Jorgo Govani Guesto Partinli Weather Men 
+                                                </a>
+                                                <div class="user__languages">
+                                                    <div class="user__language">
+                                                        Spanish
+                                                    </div>
+                                                    <div class="user__language">
+                                                        English
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Russian
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Japanese
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Douth
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Russian
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Japanese
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Douth
+                                                    </div>
+                                                </div>
+                                                <div class="user__methods">
+                                                    <div class="user__method user_send-message">
+                                                        <a href="#" class="user__method-link">
+                                                            send message 
+                                                        </a>
+                                                    </div>
+                                                    <div class="user__method user_add-friend">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                        add as friend
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="users__item user">
+                                        <div class="user__container">
+                                            <div class="user__item_left">
+                                                <a href="#" class="user__ava">
+                                                    <img src="img/avaDefault.png" alt="user" class="users__ava-img">
+                                                </a>
+                                            </div>
+                                            <div class="user__item_right">
+                                                <a href="#" class="user__name">
+                                                    Jorgo Govani Guesto Partinli Weather Men 
+                                                </a>
+                                                <div class="user__languages">
+                                                    <div class="user__language">
+                                                        Spanish
+                                                    </div>
+                                                    <div class="user__language">
+                                                        English
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Russian
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Japanese
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Douth
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Russian
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Japanese
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Douth
+                                                    </div>
+                                                </div>
+                                                <div class="user__methods">
+                                                    <div class="user__method user_send-message">
+                                                        <a href="#" class="user__method-link">
+                                                            send message 
+                                                        </a>
+                                                    </div>
+                                                    <div class="user__method user_add-friend">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                        add as friend
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="users__item user">
+                                        <div class="user__container">
+                                            <div class="user__item_left">
+                                                <a href="#" class="user__ava">
+                                                    <img src="img/avaDefault.png" alt="user" class="users__ava-img">
+                                                </a>
+                                            </div>
+                                            <div class="user__item_right">
+                                                <a href="#" class="user__name">
+                                                    Jorgo Govani Guesto Partinli Weather Men 
+                                                </a>
+                                                <div class="user__languages">
+                                                    <div class="user__language">
+                                                        Spanish
+                                                    </div>
+                                                    <div class="user__language">
+                                                        English
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Russian
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Japanese
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Douth
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Russian
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Japanese
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Douth
+                                                    </div>
+                                                </div>
+                                                <div class="user__methods">
+                                                    <div class="user__method user_send-message">
+                                                        <a href="#" class="user__method-link">
+                                                            send message 
+                                                        </a>
+                                                    </div>
+                                                    <div class="user__method user_add-friend">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                        add as friend
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="users__item user">
+                                        <div class="user__container">
+                                            <div class="user__item_left">
+                                                <a href="#" class="user__ava">
+                                                    <img src="img/avaDefault.png" alt="user" class="users__ava-img">
+                                                </a>
+                                            </div>
+                                            <div class="user__item_right">
+                                                <a href="#" class="user__name">
+                                                    Jorgo Govani Guesto Partinli Weather Men 
+                                                </a>
+                                                <div class="user__languages">
+                                                    <div class="user__language">
+                                                        Spanish
+                                                    </div>
+                                                    <div class="user__language">
+                                                        English
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Russian
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Japanese
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Douth
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Russian
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Japanese
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Douth
+                                                    </div>
+                                                </div>
+                                                <div class="user__methods">
+                                                    <div class="user__method user_send-message">
+                                                        <a href="#" class="user__method-link">
+                                                            send message 
+                                                        </a>
+                                                    </div>
+                                                    <div class="user__method user_add-friend">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                        add as friend
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="users__item user">
+                                        <div class="user__container">
+                                            <div class="user__item_left">
+                                                <a href="#" class="user__ava">
+                                                    <img src="img/avaDefault.png" alt="user" class="users__ava-img">
+                                                </a>
+                                            </div>
+                                            <div class="user__item_right">
+                                                <a href="#" class="user__name">
+                                                    Jorgo Govani Guesto Partinli Weather Men 
+                                                </a>
+                                                <div class="user__languages">
+                                                    <div class="user__language">
+                                                        Spanish
+                                                    </div>
+                                                    <div class="user__language">
+                                                        English
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Russian
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Japanese
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Douth
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Russian
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Japanese
+                                                    </div>
+                                                    <div class="user__language">
+                                                        Douth
+                                                    </div>
+                                                </div>
+                                                <div class="user__methods">
+                                                    <div class="user__method user_send-message">
+                                                        <a href="#" class="user__method-link">
+                                                            send message 
+                                                        </a>
+                                                    </div>
+                                                    <div class="user__method user_add-friend">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                        add as friend
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @@include('aside_right.html')
+            </div>
+            <div class="btn-up main__btn-up">
+                <div class="btn-up__container">
+                    <div class="btn-up__arrows">
+                        <i class="fa-solid fa-angle-up"></i>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        @@include('footer.html')
+    </div>
+
+    <script src="https://kit.fontawesome.com/3e4aba961b.js" crossorigin="anonymous"></script>
+    <script src="js/users.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

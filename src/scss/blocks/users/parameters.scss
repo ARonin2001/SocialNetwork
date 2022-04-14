@@ -1,11 +1,5 @@
 .parameters {
-    max-width: 264px;
-    width: 100%;
-    display: none;
-    .active {
-        display: block;
-    }
-
+    width: 264px;
     &__title {
         font-weight: 300;
         font-size: 16px;

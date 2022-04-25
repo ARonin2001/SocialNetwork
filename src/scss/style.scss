@@ -89,6 +89,11 @@ body {
 @import 'blocks/users/users';
 @import 'blocks/users/parameters';
 
+// messages
+@import 'blocks/messages/messages';
+@import 'blocks/messages/dialogs';
+@import 'blocks/messages/dialogs-history';
+
 // login
 @import 'blocks/login/login';
 

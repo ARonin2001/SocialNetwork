@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialNetwork</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="wraper">
+        @@include('header.html')
+        <main class="main">
+            <div class="main-content __container main-content__messages">
+                @@include('aside_left.html')
+                <div class="content">
+                    <div class="content__container">
+                        <div class="messages block">
+                            <div class="messages__container">
+                                <div class="messages__dialogs dialogs">
+                                    <div class="dialogs__container">
+                                        <div class="dialogs__header">
+                                            <div class="dialogs__search">
+                                                <i class="fa fa-search"></i>
+                                                <input type="text" name="user-name" id="dialogs__search-input" class="dialogs__search-input" placeholder="Find the user">
+                                            </div>
+                                        </div>
+                                        <div class="dialogs__users">
+                                            <div class="dialogs__user d-user active">
+                                                <div class="d-user__ava">
+                                                    <img src="img/avaDefault.png" alt="ava" class="d-user__img">
+                                                </div>
+                                                <div class="d-user__content">
+                                                    <div class="d-user__name">
+                                                        Jorgo Govani Guesto Partinli Weath... 
+                                                    </div>
+                                                    <span class="d-user__time-last-message">
+                                                        19:46
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="messages__dialog-history d-history">
+                                    <div class="dialog-history__container">
+                                        dialog-history
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-up main__btn-up">
+                <div class="btn-up__container">
+                    <div class="btn-up__arrows">
+                        <i class="fa-solid fa-angle-up"></i>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        @@include('footer.html')
+    </div>
+
+    <script src="https://kit.fontawesome.com/3e4aba961b.js" crossorigin="anonymous"></script>
+    <script src="js/messages.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

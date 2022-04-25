@@ -5,6 +5,11 @@
     "lef cont rigt";
     column-gap: 24px;
 }
+.main-content__messages {
+    grid-template-columns: 265px auto auto;
+    grid-template-areas: 
+    "lef cont cont";
+}
 
 .content {
     grid-area: cont;

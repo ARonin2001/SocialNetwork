@@ -1,5 +1,13 @@
 .messages {
+    height: 710px;
+    max-width: 843px;
+    width: 100%;
+
     &__container {
         display: flex;
+        height: 100%;
+    }
+    &__dialogs {
+        border-right: 1px solid #E0E0E0;
     }
 }

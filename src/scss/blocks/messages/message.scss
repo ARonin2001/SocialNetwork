@@ -1,0 +1,41 @@
+.message {
+    display: flex;
+    &__friend {
+        justify-content: flex-start;
+        .message__content {
+            align-items: flex-start;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+    &__me {
+        justify-content: flex-end;
+        .message__content {
+            align-items: flex-end;
+        }
+        .message__ava {
+            margin-left: 7px;
+        }
+    }
+
+    &__ava {
+        margin-right: 7px;
+        img {
+            width: 33px;
+        }
+    }
+    &__name {
+        margin-bottom: 4px;
+        color: #000;
+    }
+    &__content-dialog {
+        padding: 6px;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        line-height: 16px;
+    }
+}

@@ -1,19 +1,23 @@
 .dialogs {
     &__search {
-        padding: 13px;
         position: relative;
-        background-color: rgba(224, 224, 224, 1);
         i {
             position: absolute;
             top: 50%;
+            left: 13px;
             transform: translateY(-50%);
             color: rgba(107, 108, 110, 1)
         } 
         &-input {
-            padding-left: 26px;
+            padding: 13px 13px 13px 39px;
             background-color: rgba(224, 224, 224, 1);
             color: #767676;
+            width: 100%;
         }
+    }
+    &__users {
+        max-height: 668px;
+        overflow-y: auto;
     }
 }
 .d-user {
@@ -29,19 +33,14 @@
     &.active {
         background: #263337;
         color: #fff;
-
-        .d-user {
-            &__ava img {
-                border: solid 2px #fff;
-                border-radius: 50%;
-            }
-        }
     }
 
     &__ava {
         margin-right: 7px;
         img {
             width: 45px;
+            border: solid 2px #fff;
+            border-radius: 50%;
             box-sizing: content-box;
         }
     }

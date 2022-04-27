@@ -10,4 +10,18 @@
     &__dialogs {
         border-right: 1px solid #E0E0E0;
     }
+
+    // scrollbar
+    *::-webkit-scrollbar {
+        height: 2px;
+        width: 6px;
+    }
+    *::-webkit-scrollbar-thumb {
+        background-color: #767676;
+        border-radius: 5px;
+    }
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #767676;
+    }
 }
